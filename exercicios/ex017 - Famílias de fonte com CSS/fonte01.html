@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas: 
+	cm, mm, in, px, pt, pc
+                Medidas Relativas:
+	em	->	relativo ao tamanho natural da fonte
+	ex	->	relativo a altura x da fonte
+	rem	->	tipo em, mas relativo a fonte configurada no body
+	vw	->	relativo a largura da view port
+	vh	->	relativo a altura da view port
+	%	->	porcentagem
+Recomendação w3c:  "px" ou "em"
+Altura padrão:  16px ou 1em */
+        }
+        /* Peso (negrito):	
+
+		- fonte mais cheia (negrito) ou fina
+		- não serve para fontes simples (arial, verdana, times,...)
+		- serve pra fontes como Work Sans (import google)
+
+	font-weight: nome ou número;	    
+
+   nome:	- lighter		número:	- 100   - 500   - 900
+		- normal				- 200   - 600
+		- bold				- 300   - 700
+		- bolder				- 400   - 800
+
+
+Estilo (itálico):
+
+	font-style: valor;		valor:  - normal
+							   - italic
+
+Decoração (sublinhado):
+
+	text-decoration: underline;
+
+
+Shorthand font: simplificando fontes.
+
+   Ex:	 font-family: 'Work Sans', sans-serif;
+	         font-weight: bolder;
+	         font-size: 3em;
+	         font-style: italic;
+
+      Simplificando:
+
+		font:  italic  bolder  3em  'Work Sans', sans-serif;
+
+- A sequência deve ser:	
+
+		font-style   ->   font-weight   ->   font-size   ->   font-family;
+
+- Não precisa ter todas as propriedades, mas a sequência deve ser seguida;
+
+  Ex:		font:  bold  2em  'Work Sans'; */
+
+        h1 {
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi commodi quos, blanditiis vel assumenda unde repudiandae impedit repellat doloribus voluptatem aliquam dolor. Quaerat vel odit quidem consequatur eos corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias similique itaque, sed consequatur fuga! Accusamus quidem eum eaque quibusdam similique consequatur est debitis quaerat doloribus animi, inventore commodi ab.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptatum officiis, quasi blanditiis quisquam odit sequi labore autem est tenetur asperiores omnis illum assumenda dignissimos odio debitis laborum enim minus?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aut qui libero. Recusandae explicabo necessitatibus odit doloremque alias atque voluptate vero itaque accusamus perferendis, magni architecto possimus quos et reiciendis.</p>
+</body>
+</html>
