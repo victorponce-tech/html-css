@@ -34,25 +34,18 @@
             padding: 10px;
             background-color: lightgray;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!--
-        ANATOMIA PARA TABELAS GRANDES
-        TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
-
-        SCOPE
-            É para dar semântica as tabelas, utiliza o scope nas th, se a os dados que tiverem naquele th estiverem abaixo da tabela, utiliza o scope= "col", já se estiver na mesma linha, utiliza o scope="row"
-    -->
-
-    
     <table>
         <caption>
             População das Unidades Federativas

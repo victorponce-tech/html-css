@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Cabeçalho Fixo em Tabelas Grandes</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -34,25 +34,30 @@
             padding: 10px;
             background-color: lightgray;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
     </style>
 </head>
-<body>
-    <h1>Uso de tabelas grandes</h1>
-    <!--
-        ANATOMIA PARA TABELAS GRANDES
-        TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
 
-        SCOPE
-            É para dar semântica as tabelas, utiliza o scope nas th, se a os dados que tiverem naquele th estiverem abaixo da tabela, utiliza o scope= "col", já se estiver na mesma linha, utiliza o scope="row"
+    <!-- 
+        Cabeçalho Fixo em Tabelas Grandes 
+            A table tem que ter posicionamento relativo
+        
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: (Repete a cor do background);
+            }
     -->
 
-    
+<body>
+    <h1>Uso de tabelas grandes</h1>
     <table>
         <caption>
             População das Unidades Federativas
